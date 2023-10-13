@@ -2,12 +2,14 @@
 # SEANCE 1 :
 
 **OBJECTIFS**
+
 Pour cette première séance, nous devions générer 4 PWM en complémentaire décalée pour contrôler en boucle ouverte le moteur en
 respectant le cahier des charges en incluant les temps mort. Ensuite nous devions visualiser et verifier les signaux sur un 
 oscilloscope et réaliser un premier essai de commande de moteur. 
 Puis controler la vitesse du moteur en envoyant une séquence speed XXXX via la liaison UART (par l'USB) et faire le traitement. 
 
 **1. Réglages des PWM**
+
 **PWM SIMPLE f=20kHz , alpha 60% , résolution de 10 bits**
 Les PWM que nous avons utilisé sont les PWM du timer 1 (channel 1 -> 1°PWM,channel 2 -> 2°PWM,channel 3 -> Compl1°PWM,channel 4 -> Compl2°PWM). 
 On veut une fréquence de PWM de 20kHz donc on a fais les réglages suivants : 
@@ -18,6 +20,7 @@ On veut une fréquence de PWM de 20kHz donc on a fais les réglages suivants :
 On a pu visualiser les 4 PWM simples sur l'oscilloscope et verifier la fréquence. 
 
 **PWM EN COMPLEMENTAIRE DECALEE**
+
 Pour avoir une PWM en complémentaire décallé, on a changé certains réglages. Premièrement on a mis le mode centrée pour la PWM donc
 nous devons changer la valeur de l'ARR pour avoir une fréquence de 20kHz: 
 -PSC  & ARR 4125
