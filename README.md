@@ -1,7 +1,8 @@
 # Actionneur_Automatique_Applique
 # SEANCE 1 :
 
-**OBJECTIFS**
+<font color="red">**OBJECTIFS**</font>
+
 
 Pour cette première séance, nous devions générer 4 PWM en complémentaire décalée pour contrôler en boucle ouverte le moteur en
 respectant le cahier des charges en incluant les temps mort. Ensuite nous devions visualiser et verifier les signaux sur un 
